@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" width="100%" height="100%">
+  <defs>
+    <!-- 3D Red Gradients -->
+    <linearGradient id="redMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E61938" />
+      <stop offset="50%" stop-color="#C8102E" />
+      <stop offset="100%" stop-color="#9E0B22" />
+    </linearGradient>
+    <linearGradient id="redLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EB2140" />
+      <stop offset="100%" stop-color="#C8102E" />
+    </linearGradient>
+    <linearGradient id="redRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B00D27" />
+      <stop offset="100%" stop-color="#8F091E" />
+    </linearGradient>
+    <linearGradient id="darkCircleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#45494E" />
+      <stop offset="100%" stop-color="#2B2F33" />
+    </linearGradient>
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- EMBLEM GROUP (Centered at X=250, Y=145) -->
+  <g transform="translate(0, 5)">
+    <!-- Outer Dark Charcoal Border Circle -->
+    <circle cx="250" cy="145" r="96" fill="#23272A" filter="url(#softShadow)" />
+
+    <!-- Red 3D Ring -->
+    <circle cx="250" cy="145" r="90" fill="none" stroke="url(#redMain)" stroke-width="11" />
+    <circle cx="250" cy="145" r="83" fill="url(#darkCircleGrad)" stroke="#1B1E21" stroke-width="3" />
+
+    <!-- Subtle Recessed Inner Gear Silhouette (Top Arc) -->
+    <path d="M 192 125
+             L 196 112 L 204 115
+             A 52 52 0 0 1 212 107 L 209 98 L 219 93 L 224 101
+             A 52 52 0 0 1 235 97 L 236 87 L 246 86 L 248 95
+             A 52 52 0 0 1 258 95 L 261 86 L 271 88 L 270 97
+             A 52 52 0 0 1 280 102 L 286 94 L 295 100 L 290 108
+             A 52 52 0 0 1 298 117 L 306 114 L 310 125
+             A 44 44 0 0 0 192 125 Z"
+          fill="#35393E" stroke="#26292D" stroke-width="1.5" opacity="0.85" />
+
+    <!-- Left Spanner / Combination Wrench -->
+    <g filter="url(#dropShadow)" transform="translate(200, 152) rotate(-6)">
+      <!-- Wrench Shaft -->
+      <rect x="-4.5" y="-22" width="9" height="44" rx="3" fill="url(#redMain)" stroke="#23272A" stroke-width="2" />
+      <rect x="-1.5" y="-15" width="3" height="28" rx="1.5" fill="#9E0B22" />
+      <!-- Top Open-End Jaw -->
+      <path d="M -9 -20 C -11 -28, -6 -35, 0 -35 C 6 -35, 11 -28, 9 -20 L 5 -18 L 4 -26 L -4 -26 L -5 -18 Z"
+            fill="url(#redMain)" stroke="#23272A" stroke-width="2" stroke-linejoin="round" />
+      <!-- Bottom Ring-End -->
+      <circle cx="0" cy="26" r="10" fill="url(#redMain)" stroke="#23272A" stroke-width="2" />
+      <circle cx="0" cy="26" r="4.5" fill="#2B2F33" stroke="#23272A" stroke-width="1.5" />
+    </g>
+
+    <!-- Right Spanner / Combination Wrench -->
+    <g filter="url(#dropShadow)" transform="translate(300, 152) rotate(6)">
+      <!-- Wrench Shaft -->
+      <rect x="-4.5" y="-22" width="9" height="44" rx="3" fill="url(#redMain)" stroke="#23272A" stroke-width="2" />
+      <rect x="-1.5" y="-15" width="3" height="28" rx="1.5" fill="#9E0B22" />
+      <!-- Top Open-End Jaw -->
+      <path d="M -9 -20 C -11 -28, -6 -35, 0 -35 C 6 -35, 11 -28, 9 -20 L 5 -18 L 4 -26 L -4 -26 L -5 -18 Z"
+            fill="url(#redMain)" stroke="#23272A" stroke-width="2" stroke-linejoin="round" />
+      <!-- Bottom Ring-End -->
+      <circle cx="0" cy="26" r="10" fill="url(#redMain)" stroke="#23272A" stroke-width="2" />
+      <circle cx="0" cy="26" r="4.5" fill="#2B2F33" stroke="#23272A" stroke-width="1.5" />
+    </g>
+
+    <!-- Left Handlebar & Mirror Assembly -->
+    <g filter="url(#dropShadow)">
+      <!-- Left Mirror Stalk & Housing -->
+      <path d="M 178 106 L 164 90 L 136 86 L 130 62 L 166 66 L 175 84 L 184 103 Z"
+            fill="#23272A" stroke="#23272A" stroke-width="4" stroke-linejoin="round" />
+      <!-- Left Mirror Red Polygon -->
+      <polygon points="133,64 164,68 171,84 139,83" fill="url(#redLeft)" />
+      <!-- Mirror Stalk -->
+      <path d="M 164 83 L 180 103" stroke="url(#redMain)" stroke-width="5" stroke-linecap="round" />
+
+      <!-- Left Handlebar Tube & Grip -->
+      <path d="M 225 123 L 196 105 L 138 114 L 136 102 L 198 94 L 230 115 Z"
+            fill="#23272A" stroke="#23272A" stroke-width="4" stroke-linejoin="round" />
+      <path d="M 226 119 L 197 100 L 139 108" fill="none" stroke="url(#redLeft)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- Left Grip Collar -->
+      <rect x="174" y="94" width="11" height="20" rx="3" transform="rotate(-7 179 104)" fill="url(#redMain)" stroke="#23272A" stroke-width="2.5" />
+    </g>
+
+    <!-- Right Handlebar & Mirror Assembly -->
+    <g filter="url(#dropShadow)">
+      <!-- Right Mirror Stalk & Housing -->
+      <path d="M 322 106 L 336 90 L 364 86 L 370 62 L 334 66 L 325 84 L 316 103 Z"
+            fill="#23272A" stroke="#23272A" stroke-width="4" stroke-linejoin="round" />
+      <!-- Right Mirror Red Polygon -->
+      <polygon points="367,64 336,68 329,84 361,83" fill="url(#redRight)" />
+      <!-- Mirror Stalk -->
+      <path d="M 336 83 L 320 103" stroke="url(#redMain)" stroke-width="5" stroke-linecap="round" />
+
+      <!-- Right Handlebar Tube & Grip -->
+      <path d="M 275 123 L 304 105 L 362 114 L 364 102 L 302 94 L 270 115 Z"
+            fill="#23272A" stroke="#23272A" stroke-width="4" stroke-linejoin="round" />
+      <path d="M 274 119 L 303 100 L 361 108" fill="none" stroke="url(#redRight)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- Right Grip Collar -->
+      <rect x="315" y="94" width="11" height="20" rx="3" transform="rotate(7 321 104)" fill="url(#redMain)" stroke="#23272A" stroke-width="2.5" />
+    </g>
+
+    <!-- Center Motorcycle Front Cowl / Headlight Mask -->
+    <g filter="url(#dropShadow)">
+      <!-- Outer Dark Cowl Silhouette Base -->
+      <path d="M 228 106 L 272 106 L 288 134 L 270 202 L 250 208 L 230 202 L 212 134 Z"
+            fill="#1E2124" stroke="#1E2124" stroke-width="5" stroke-linejoin="round" />
+
+      <!-- Side Cheek Fairing Wings -->
+      <path d="M 215 134 L 226 118 L 231 198 L 225 196 Z" fill="url(#redLeft)" />
+      <path d="M 285 134 L 274 118 L 269 198 L 275 196 Z" fill="url(#redRight)" />
+
+      <!-- Upper Headlight Crown Shield (Left & Right 3D Facets) -->
+      <polygon points="250,109 230,109 220,132 232,150 250,156" fill="url(#redLeft)" />
+      <polygon points="250,109 270,109 280,132 268,150 250,156" fill="url(#redRight)" />
+
+      <!-- Lower Headlight Lens Shield (Left & Right 3D Facets) -->
+      <polygon points="250,162 231,155 236,200 250,204" fill="url(#redLeft)" />
+      <polygon points="250,162 269,155 264,200 250,204" fill="url(#redRight)" />
+    </g>
+  </g>
+
+  <!-- TYPOGRAPHY LOCKUP -->
+  <text x="250" y="318" text-anchor="middle" fill="#2B2F33" font-family="'Oswald', 'Impact', 'Arial Black', sans-serif" font-size="68" font-weight="700" letter-spacing="3">
+    BIKEBAZAAR
+  </text>
+  <text x="250" y="352" text-anchor="middle" fill="#2B2F33" font-family="'Inter', 'Arial', sans-serif" font-size="22" font-weight="700" letter-spacing="8">
+    SPARE PARTS
+  </text>
+</svg>
